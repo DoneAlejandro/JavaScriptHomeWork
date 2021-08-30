@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript1</title>
+</head>
+<body>
+	<script>
+		"use strict"
+		// Числа 10 + 10 складываются со строкой 10, произошла конкатенация суммы со строкой. Результат: "2010"
+		let resultOne = 10 + 10 + "10";
+		// В выражении произошла конкатенация числа 10 со строкой 10 и числом 10. Результат: "101010"
+		let resultTwo = 10 + "10" + 10;
+		// В выражении представлена сумма двух чисел и преобразование крайнего операнда в число. Результат: "30"
+		let resultThree = 10 + 10 + +"10";
+		// В выражении представлено деление числа на неопределённое значение. Результат: "-Infinity"
+		let resultFour = 10 / -"";
+		// В выражении представлено деление числа на строку, что является бессмысленным действием. Результат: "NaN"
+		let resultFive = 10 / +"2,5";
+		// Вывод
+		console.log(resultOne);
+		console.log(resultTwo);
+		console.log(resultThree);
+		console.log(resultFour);
+		console.log(resultFive);
+	</script>
+</body>
+</html>
